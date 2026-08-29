@@ -160,7 +160,7 @@ body{background:#F5F2EA;color:#0E0E2E;font-family:Archivo,sans-serif;-webkit-fon
  <script src="https://unpkg.com/three@0.149.0/build/three.min.js"></script>
  <script>(function(){
    var built=false;
-   var CFG = {"bg": 921118, "accent": 13214247, "theta": 0.3, "phi": 0.78, "radius": 38, "target": {"x": 0, "y": 4, "z": 2}, "qr": {"url": "https://vastlyresilient.github.io/seolution-book/?ref=music-center-north", "size": 37, "matrix": [[1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1], [1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1], [1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1], [1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1], [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1], [1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0], [0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1], [1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1], [0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1], [0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1], [1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1], [1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0], [0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0], [1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1], [1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1], [0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0], [1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1], [1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0], [0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0], [1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0], [1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1], [1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0], [1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0], [1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1], [1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1], [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1]]}};
+   var CFG = {"bg": 921118, "accent": 13214247, "theta": 0.3, "phi": 0.85, "radius": 38, "target": {"x": -0.25, "y": 4.65, "z": 0.3}, "qr": {"url": "https://vastlyresilient.github.io/seolution-book/?ref=music-center-north", "size": 37, "matrix": [[1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1], [1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1], [1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1], [1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1], [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1], [1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1], [1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0], [0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1], [1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1], [0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1], [0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1], [1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1], [1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0], [0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0], [1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1], [1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1], [0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0], [1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1], [1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0], [0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0], [1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0], [1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1], [1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1], [1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0], [1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0], [1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1], [1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1], [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1]]}, "rimColor": 5144520, "rimIntensity": 0.88, "exposure": 1.08, "bounceIntensity": 1.45};
    function build(){
      var mount=document.getElementById('voxel-mcn');
      if(!mount) return;
@@ -169,88 +169,118 @@ body{background:#F5F2EA;color:#0E0E2E;font-family:Archivo,sans-serif;-webkit-fon
      if(built){ if(mount.__forceResize) mount.__forceResize(); return; }
      built=true;
      const THREE = window.THREE;
-// ---------- LEGO BRICK HELPERS ----------
+
 function buildVoxelScene(mount, cfg){
-  const scene = new THREE.Scene();
-  scene.background = new THREE.Color(cfg.bg);
-  const camera = new THREE.PerspectiveCamera(40, mount.clientWidth/mount.clientHeight, 0.1, 400);
-  const renderer = new THREE.WebGLRenderer({antialias:true, preserveDrawingBuffer:true});
-  renderer.setSize(mount.clientWidth, mount.clientHeight);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
-  renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  // ===== RENDERER BASELINE (remediation spec section 2) =====
+  const renderer = new THREE.WebGLRenderer({antialias:true, alpha:false});
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = cfg.exposure || 1.05;
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.setSize(mount.clientWidth, mount.clientHeight, false);
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   mount.appendChild(renderer.domElement);
 
-  // ---- LIGHTS (warm, premium) ----
-  scene.add(new THREE.HemisphereLight(0xfff0dd, 0x1a0f08, 0.55));
-  const key = new THREE.DirectionalLight(0xffe6c0, 1.5); key.position.set(20,32,16);
-  key.castShadow=true; key.shadow.mapSize.set(2048,2048);
-  key.shadow.camera.left=-30; key.shadow.camera.right=30; key.shadow.camera.top=30; key.shadow.camera.bottom=-30;
-  key.shadow.bias=-0.0004; scene.add(key);
-  const rim = new THREE.DirectionalLight(cfg.accent, 0.5); rim.position.set(-16,12,-18); scene.add(rim);
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(cfg.bg || 0x0e0e12);
 
-  // ---- MATERIAL CACHE ----
-  const mats = {};
-  function mat(c, o={}){ const k=c+'|'+JSON.stringify(o); if(!mats[k]){ mats[k]=new THREE.MeshStandardMaterial(Object.assign({color:c, roughness:0.55, metalness:0.02}, o)); } return mats[k]; }
-
-  // ---- LEGO BRICK: box + stud(s) on top ----
-  const geoBox = new THREE.BoxGeometry(1,1,1);
-  const geoStud = new THREE.CylinderGeometry(0.34,0.34,0.2,16);
-  const world = new THREE.Group(); scene.add(world);
-  function brick(x,y,z, w,d,h, color, opts={}){
-    // Micro-voxel: clean planar faces, NO studs. w,d,h in world units.
-    const g = new THREE.Group();
-    const body = new THREE.Mesh(geoBox, mat(color, opts.mat||{}));
-    body.scale.set(w, h, d); body.castShadow=true; body.receiveShadow=true;
-    g.add(body);
-    g.position.set(x, y+h/2, z);
-    world.add(g);
-    return g;
-  }  // plain box (for interior/details, no studs)
-  function box(x,y,z, w,h,d, color, opts={}){
-    const m = new THREE.Mesh(geoBox, mat(color, opts.mat||{}));
-    m.scale.set(w,h,d); m.position.set(x,y,z);
-    m.castShadow = opts.shadow!==false; m.receiveShadow=true; world.add(m); return m;
-  }
-
-  window.__world = world; window.__brick = brick; window.__box = box; window.__mat = mat;
-  window.__scene = scene; window.__camera = camera; window.__renderer = renderer;
-  window.__cfg = cfg;
-  if(cfg.build) cfg.build({brick, box, mat, world, scene, camera, cfg});
-
-  // ---- CAMERA ORBIT ----
-  const orbit = { theta: cfg.theta!==undefined?cfg.theta:0.62, phi: cfg.phi!==undefined?cfg.phi:0.62, radius: cfg.radius||34, dragging:false, lx:0, ly:0 };
-  const target = cfg.target||{x:0,y:5,z:0};
+  const camera = new THREE.PerspectiveCamera(32, mount.clientWidth/mount.clientHeight, 0.1, 1000);
+  const orbit = {theta:cfg.theta||0.55, phi:cfg.phi||0.9, radius:cfg.radius||34};
+  const target = new THREE.Vector3(cfg.target?.x||0, cfg.target?.y||4, cfg.target?.z||2);
   function upd(){
-    orbit.phi = Math.max(0.12, Math.min(1.5, orbit.phi));
-    orbit.radius = Math.max(14, Math.min(60, orbit.radius));
     camera.position.set(
       target.x + orbit.radius*Math.sin(orbit.phi)*Math.sin(orbit.theta),
       target.y + orbit.radius*Math.cos(orbit.phi),
-      target.z + orbit.radius*Math.sin(orbit.phi)*Math.cos(orbit.theta));
-    camera.lookAt(target.x,target.y,target.z);
+      target.z + orbit.radius*Math.sin(orbit.phi)*Math.cos(orbit.theta)
+    );
+    camera.lookAt(target);
   }
-  const dom = renderer.domElement; dom.style.cursor='grab';
-  dom.addEventListener('pointerdown',e=>{orbit.dragging=true;orbit.lx=e.clientX;orbit.ly=e.clientY;dom.style.cursor='grabbing';});
-  window.addEventListener('pointermove',e=>{ if(!orbit.dragging)return; orbit.theta-=(e.clientX-orbit.lx)*0.006; orbit.phi-=(e.clientY-orbit.ly)*0.006; orbit.lx=e.clientX; orbit.ly=e.clientY; });
-  window.addEventListener('pointerup',()=>{orbit.dragging=false;dom.style.cursor='grab';});
-  dom.addEventListener('wheel',e=>{e.preventDefault();orbit.radius+=e.deltaY*0.02;},{passive:false});
   upd();
-  window.__setView=(t,p,r)=>{orbit.theta=t;orbit.phi=p;if(r)orbit.radius=r;upd();};
 
-  function loop(){ requestAnimationFrame(loop); upd(); renderer.render(scene,camera); }
-  loop();
-  function resize(){ const w=mount.clientWidth||mount.parentElement.clientWidth||800, h=mount.clientHeight||mount.parentElement.clientHeight||600; camera.aspect=w/h; camera.updateProjectionMatrix(); renderer.setSize(w,h); }
-  window.__export4K = function(theta, phi, radius){
-    if(theta!==undefined){ orbit.theta=theta; orbit.phi=phi; if(radius)orbit.radius=radius; upd(); }
-    const W=3840, H=2160;
-    camera.aspect = W/H; camera.updateProjectionMatrix();
-    renderer.setSize(W,H);
-    renderer.render(scene,camera);
-    const url = renderer.domElement.toDataURL('image/png');
-    resize(); // restore
-    return url;
-  };
-  window.addEventListener('resize', resize); mount.__forceResize=resize; resize();
+  // Lighting baseline per spec
+  const hemi = new THREE.HemisphereLight(0xC9DAEC, 0x1A1512, 0.32); scene.add(hemi);
+  const key = new THREE.DirectionalLight(cfg.keyColor||0xE8F1FF, cfg.keyIntensity||2.20);
+  key.position.set(18,26,20); key.castShadow = true;
+  key.shadow.mapSize.set(4096,4096);
+  key.shadow.camera.left=-26; key.shadow.camera.right=26;
+  key.shadow.camera.top=26; key.shadow.camera.bottom=-26;
+  key.shadow.camera.near=0.5; key.shadow.camera.far=80;
+  key.shadow.bias=-0.00015; key.shadow.normalBias=0.03; key.shadow.radius=3;
+  scene.add(key);
+  const fill = new THREE.DirectionalLight(0xC6D7F2, 0.48); fill.position.set(-16,12,10); scene.add(fill);
+  const rim = new THREE.DirectionalLight(cfg.rimColor||0xE8F1FF, cfg.rimIntensity||0.85); rim.position.set(-14,16,-20); scene.add(rim);
+  const bounce = new THREE.RectAreaLight(0xFFD7AA, cfg.bounceIntensity||1.25, 18, 10);
+  bounce.position.set(0,5,12); bounce.lookAt(0,3,0); scene.add(bounce);
+
+  const world = new THREE.Group(); scene.add(world);
+  const geoBox = new THREE.BoxGeometry(1,1,1);
+
+  const matCache = new Map();
+  function mat(color, opts){
+    const key = color + JSON.stringify(opts||{});
+    if(matCache.has(key)) return matCache.get(key);
+    const m = new THREE.MeshStandardMaterial({
+      color: color,
+      roughness: opts?.roughness ?? 0.82,
+      metalness: opts?.metalness ?? 0,
+      emissive: opts?.emissive ?? 0x000000,
+      emissiveIntensity: opts?.emissiveIntensity ?? 0,
+      transparent: opts?.transparent ?? false,
+      opacity: opts?.opacity ?? 1,
+    });
+    matCache.set(key, m);
+    return m;
+  }
+
+  function box(x,y,z, w,h,d, color, opts){
+    const m = new THREE.Mesh(geoBox, mat(color, opts?.mat||{}));
+    m.position.set(x,y,z); m.scale.set(w,h,d);
+    m.castShadow = opts?.shadow !== false;
+    m.receiveShadow = true;
+    world.add(m);
+    return m;
+  }
+  function brick(x,y,z, w,d,h, color, opts){
+    return box(x, y+h/2, z, w, h, d, color, opts);
+  }
+
+  cfg.build({brick, box, mat, world, cfg, scene, camera, renderer});
+
+  function resize(){
+    const w = mount.clientWidth, h = mount.clientHeight;
+    camera.aspect = w/h; camera.updateProjectionMatrix();
+    renderer.setSize(w, h, false);
+  }
+  new ResizeObserver(resize).observe(mount);
+  mount.__forceResize = resize;
+
+  let dragging = false, px = 0, py = 0;
+  mount.addEventListener('pointerdown', e => { dragging = true; px = e.clientX; py = e.clientY; mount.setPointerCapture(e.pointerId); });
+  mount.addEventListener('pointermove', e => {
+    if(!dragging) return;
+    orbit.theta -= (e.clientX - px) * 0.005;
+    orbit.phi = Math.max(0.1, Math.min(Math.PI-0.1, orbit.phi + (e.clientY - py) * 0.005));
+    px = e.clientX; py = e.clientY; upd();
+  });
+  mount.addEventListener('pointerup', () => dragging = false);
+  mount.addEventListener('wheel', e => {
+    orbit.radius = Math.max(10, Math.min(100, orbit.radius + e.deltaY * 0.05)); upd();
+  });
+
+  function animate(){
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+  }
+  animate();
+
+  window.__world = world;
+  window.__scene = scene;
+  window.__camera = camera;
+  window.__renderer = renderer;
+  window.__cfg = cfg;
+  window.__setView = function(t,p,r){ orbit.theta=t; orbit.phi=p; if(r) orbit.radius=r; upd(); };
+  window.__ready = true;
 }
 
      CFG.build = function(ctx){ var brick=ctx.brick, box=ctx.box, mat=ctx.mat, world=ctx.world, cfg=ctx.cfg; var qr=cfg.qr;
@@ -317,12 +347,40 @@ function qrPlaza(){
 }
 
 // Micro-brick facade — dense small tiles with tone variation
+
+// ===== NORMAL-BASED SURFACE BUILDER (remediation spec section 1) =====
+function buildSurface(origin, normal, uAxis, vAxis, width, height, module, color, openings, opts){
+  opts = opts || {};
+  const nx = Math.max(1, Math.round(width/module)), ny = Math.max(1, Math.round(height/module));
+  const ow = width/nx, oh = height/ny;
+  for(let i=0;i<nx;i++) for(let j=0;j<ny;j++){
+    const lu = -width/2 + (i+0.5)*ow;
+    const lv = -height/2 + (j+0.5)*oh;
+    let skip = false;
+    if(openings) for(const op of openings){
+      if(Math.abs(lu - op.u) < op.w/2 && Math.abs(lv - op.v) < op.h/2){ skip = true; break; }
+    }
+    if(skip) continue;
+    const tone = opts.toneVar === true ? ((i+j)%3===0 ? color : (i+j)%3===1 ? shade(color,0.9) : shade(color,1.1)) : color;
+    const px = origin[0] + uAxis[0]*lu + vAxis[0]*lv + normal[0]*(opts.layerOffset||0);
+    const py = origin[1] + uAxis[1]*lu + vAxis[1]*lv + normal[1]*(opts.layerOffset||0);
+    const pz = origin[2] + uAxis[2]*lu + vAxis[2]*lv + normal[2]*(opts.layerOffset||0);
+    const dims = [
+      Math.abs(uAxis[0])>0.5 ? ow : (Math.abs(vAxis[0])>0.5 ? oh : (opts.depth||0.15)),
+      Math.abs(uAxis[1])>0.5 ? ow : (Math.abs(vAxis[1])>0.5 ? oh : (opts.depth||0.15)),
+      Math.abs(uAxis[2])>0.5 ? ow : (Math.abs(vAxis[2])>0.5 ? oh : (opts.depth||0.15))
+    ];
+    box(px, py, pz, dims[0]*0.92, dims[1]*0.92, dims[2]*0.92, tone, {shadow:false});
+  }
+}
+
+// microBrickFace — FIXED: side faces now use cx for X coordinate, vary along Z
 function microBrickFace(cx, cy, cz, w, h, color, face){
   const tile=0.5, nx=Math.ceil(w/tile), ny=Math.ceil(h/tile);
   for(let i=0;i<nx;i++) for(let j=0;j<ny;j++){
     const tone = (i+j)%3===0 ? color : (i+j)%3===1 ? shade(color,0.9) : shade(color,1.1);
     const px = cx - w/2 + (i+0.5)*tile, py = cy - h/2 + (j+0.5)*tile;
-    if(face==='sideR') box(cz, py, -px, 0.15, tile*0.92, tile*0.92, tone, {shadow:false});
+    if(face==='sideR' || face==='sideL') box(cx, py, cz - w/2 + (i+0.5)*tile, 0.15, tile*0.92, tile*0.92, tone, {shadow:false});
     else box(px, py, cz, tile*0.92, tile*0.92, 0.15, tone, {shadow:false});
   }
 }
@@ -429,92 +487,440 @@ function shade(col, f){
 }
 
 
-const NAVY=0x1a2a4a, NAVYD=0x0e1a2e, GOLD=0xC9A227, GOLDD=0xa8821a,
-      CREAM=0xF5EFE6, GLASSW=0xffc966, WHITE=0xf8f4ec, DARK=0x0e0e1e, BLACK=0x1a1a1a;
-qrPlaza();
-const W=14, D=10, H=8;
-brick(0, 0.15, 0, W, D, 0.3, 0x2a2a3a);
-microBrickFace(0, H/2+0.15, D/2+0.05, W, H-0.3, 0x2a2a3a, 'front');
-microBrickFace(0, H/2+0.15, -D/2-0.05, W, H-0.3, 0x1a1a2a, 'front');
-microBrickFace(W/2+0.05, H/2+0.15, 0, D, H-0.3, 0x1a1a2a, 'sideR');
-microBrickFace(-W/2-0.05, H/2+0.15, 0, D, H-0.3, 0x1a1a2a, 'sideR');
-brick(0, 0.3, 0, W-0.4, D-0.4, H-0.6, 0x1a1a1a);
-brick(0, H+0.1, 0, W+0.4, D+0.4, 0.5, 0x1a1a1a);
-brick(0, H+0.5, 0, W+0.2, D+0.2, 0.3, 0x0a0a0a);
-brick(-W/2+2, H+0.9, -D/2+2, 1.2, 1.0, 1.8, 0x2a2a3a);
-box(W/2-2.5, H+0.8, -D/2+2.5, 1.0, 0.7, 1.2, 0x9aa0a6);
+// ===== MUSIC CENTER NORTH — STORE + LEARNING + REPAIR + PERFORMANCE (remediation spec §5) =====
+// Unique silhouette: retail hall + lesson/repair tower + cafe/performance corner bay + stepped clerestory
+// Facade mix: 38% navy #183253, 28% warm oak #8B643F, 18% charcoal #2B2B31, 12% glass, 4% brass #C7A04A
 
-// Sign band
-box(0, H-2.2, D/2+0.15, W*0.9, 2.0, 0.3, NAVY);
-box(0, H-2.2, D/2+0.18, W*0.9-0.2, 1.7, 0.32, NAVYD, {shadow:false});
-drawName("MUSIC CENTER", H-2.75, D/2+0.35, 0.24, GOLD, 0.25);
-drawName("NORTH", H-3.15, D/2+0.35, 0.14, WHITE, 0.2);
-// Music note glyph
-const NOTE=["..##...","..##...","..##...","..##...","..##...",".####..",".####..",".####..","..##..."];
-paintGlyph(NOTE, 4.6, H-2.2, D/2+0.32, 0.18, {'#':GOLD}, 'front');
+const NAVY=0x183253, NAVYD=0x10223a, OAK=0x8B643F, OAKD=0x6e4c2f, CHAR=0x2B2B31, CHARD=0x1d1d22,
+      BRASS=0xC7A04A, CREAM=0xEFE7D8, BLUE=0x4B89C6, GLASSG=0x88c9e8, WARMG=0xFFB55F, STAGE=0xFFD3A0;
 
-awningStripes(0, H-4.0, D/2, W*0.8, 2.2, NAVY, GOLD);
-
-// Storefront
-box(-3.0, 1.8, D/2+0.1, 3.2, 3.0, 0.12, GLASSW, {shadow:false});
+// ===== QR GROUND (0.45-unit tiles per spec §7) =====
 {
-  const guitars=[0x8B4513, 0xD42B1E, 0x2a4a9a];
-  guitars.forEach((c,i)=>{
-    const gx=-4.0+i*0.7;
-    box(gx, 1.3, D/2-0.35, 0.45, 0.6, 0.12, c, {shadow:false});
-    box(gx, 1.8, D/2-0.35, 0.1, 0.4, 0.06, 0x3a3a3a, {shadow:false});
-  });
-}
-box(-3.0, 1.8, D/2+0.16, 3.4, 0.12, 0.08, DARK, {shadow:false});
-box(-3.0, 1.8, D/2+0.16, 0.12, 3.1, 0.08, DARK, {shadow:false});
-box(-3.0, 0.25, D/2+0.2, 3.4, 0.2, 0.4, CREAM);
-
-box(3.2, 1.8, D/2+0.1, 2.8, 3.0, 0.12, GLASSW, {shadow:false});
-box(3.2, 1.1, D/2-0.35, 1.6, 0.5, 0.35, 0x1a1a1a, {shadow:false});
-box(3.2, 1.4, D/2-0.35, 1.4, 0.12, 0.25, 0xf8f4ec, {shadow:false});
-box(3.2, 1.8, D/2+0.16, 3.0, 0.12, 0.08, DARK, {shadow:false});
-box(3.2, 1.8, D/2+0.16, 0.12, 3.1, 0.08, DARK, {shadow:false});
-box(3.2, 0.25, D/2+0.2, 3.0, 0.2, 0.4, CREAM);
-
-box(0, 1.9, D/2+0.08, 1.6, 3.8, 0.18, NAVY);
-box(0, 2.5, D/2+0.2, 1.0, 1.4, 0.08, GLASSW, {shadow:false});
-box(0.5, 1.8, D/2+0.24, 0.08, 0.4, 0.06, GOLD, {shadow:false});
-box(0, 0.2, D/2+0.4, 1.8, 0.18, 0.8, 0x9aa0a6);
-
-// Side wall: 10 YEARS OF MUSIC
-{
-  const words=["10 YEARS","OF MUSIC"], s=0.22;
-  words.forEach((word,wi)=>{
-    const tw=glyphCols(word)*s; let cz=-tw/2+0.3;
-    for(const ch of word){
-      const g=F5[ch]; if(!g||!g[0]){cz+=2*s;continue;} const gw=g[0].length;
-      for(let r=0;r<g.length;r++) for(let c=0;c<gw;c++)
-        if(g[r][c]==='1') box(W/2+0.25, 6.0-wi*2.0+(g.length-1-r)*s, cz+c*s, 0.25, s*0.85, s*0.85, GOLD, {shadow:false});
-      cz+=(gw+1.5)*s;
-    }
-  });
+  const N=qr.size, tile=0.45, off=-N*tile/2;
+  for(let r=0;r<N;r++) for(let c=0;c<N;c++){
+    const on = qr.matrix[r][c]===1;
+    box(off+c*tile+tile/2, 0.04, off+r*tile+tile/2, tile*0.96,0.08,tile*0.96, on?0x171717:0xE7E1D5, {shadow:false});
+  }
+  box(0, 0.12, 0, N*tile+1.2, 0.24, N*tile+1.2, 0xD6CEC0, {shadow:false});
+  box(0, 0.02, 0, N*tile+1.4, 0.04, N*tile+1.4, 0xD9D2C6, {shadow:false});
 }
 
-// Rear
-box(0, 1.2, -D/2-0.1, 2.0, 2.4, 0.2, 0x4a4a4a);
-box(0, 2.8, -D/2-0.2, 2.8, 0.6, 0.15, NAVY);
+// ===== GROUND: sidewalk + curb + road + rear service lane (connected, not floating) =====
+// Sidewalk: X=-10.00..9.00, Z=5.95..9.20, top Y=0.22
+brick(-0.5, 0, 7.575, 19.0, 3.25, 0.22, 0xC7BBA8);
+// Curb at Z=9.45, top Y=0.36
+brick(-0.5, 0.22, 9.45, 19.5, 0.30, 0.28, 0x9a9a9a);
+// Road at Z=9.60+, top Y=0.10
+brick(-0.5, 0, 11.0, 21, 3.0, 0.10, 0x3a3a3a);
+// Rear service lane: X=8.60..11.40, Z=-8.80..4.60, top Y=0.16
+brick(10.0, 0, -2.1, 2.8, 13.4, 0.16, 0x34383D);
+// Rear service pad behind building: X=-2.0..7.5, Z=-8.60..-5.30
+brick(2.75, 0, -6.95, 9.5, 3.3, 0.16, 0x34383D);
 
-// Street
-planter(-W/2-1.2, D/2-0.6, NAVY, 0x2f7a3a);
-planter( W/2+1.2, D/2-0.6, NAVY, 0x2f7a3a);
-minifig(-W/2-2.0, D/2+0.8, NAVY, 0x2a2a2a);
-minifig(-W/2-3.5, D/2+2.5, GOLD, 0x2a2a2a);
-minifig( W/2+2.0, D/2+1.0, 0x2a4a9a, 0x2a3a5a);
-sandwichBoard(-4.0, D/2+3.0, ["LESSONS","REPAIRS"], 0.11, NAVY, GOLD);
-lampPost(-W/2-5.5, D/2+0.3);
-lampPost( W/2+5.5, D/2+0.3);
-van(W/2+5.5, 0.3, NAVY, "LESSONS", GOLD, 0.85);
-// Guitar hero
-box(W/2+2.5, 0.4, D/2+3.5, 2.0, 0.8, 2.0, 0x3a3a3a);
-box(W/2+2.5, 1.2, D/2+3.5, 1.0, 1.2, 0.25, 0x8B4513);
-box(W/2+2.5, 2.0, D/2+3.5, 0.2, 0.9, 0.12, 0x3a3a3a);
-box(W/2+2.5, 2.6, D/2+3.5, 0.4, 0.3, 0.15, 0x3a3a3a);
-box(W/2+2.5, 1.2, D/2+3.68, 0.3, 0.3, 0.06, 0x1a1a1a, {shadow:false});
+// ===== VOLUME CONSTANTS =====
+// Retail hall: center (-1.25,0,0.25), 15.50 W x 11.50 D x 7.25 H
+const RW=15.5, RD=11.5, RH=7.25, RX=-1.25, RZ=0.25;
+// Lesson/repair tower: center (5.25,0,-0.75), 6.00 W x 10.00 D x 10.50 H
+const TW=6.0, TD=10.0, TH=10.5, TX=5.25, TZ=-0.75;
+// Cafe/performance bay: corner cut — glazed L over the retail front-left corner
+// legs: front leg X=-9.00..-4.00 (Z 5.75..4.20), left leg Z=5.75..1.55 (X -9.00..-4.80)
+const CBH=6.5;
+// Clerestory/staff volume: center (-1.75,8.35,0), 7.00 W x 2.20 H x 2.50 D, five 0.25-u steps
+const CLX=-1.75, CLY=8.35, CLW=7.0, CLH=2.2, CLD=2.5;
+
+// Front structural plane Z0=+5.75 → glass 5.55, frame 6.20, sign 6.45, letters 6.75
+const ZF=5.75;
+
+// Frame helper: 4 border strips around an opening (front-facing, plane at z)
+function frameFront(cx, cy, z, w, h, t, d, color){
+  box(cx, cy+h/2-t/2, z, w, t, d, color);              // top
+  box(cx, cy-h/2+t/2, z, w, t, d, color);              // bottom
+  box(cx-w/2+t/2, cy, z, t, h-2*t, d, color);          // left
+  box(cx+w/2-t/2, cy, z, t, h-2*t, d, color);          // right
+}
+// Side-facing frame (plane at x, varying along z)
+function frameSide(x, cy, cz, w, h, t, d, color){
+  box(x, cy+h/2-t/2, cz, d, t, w, color);
+  box(x, cy-h/2+t/2, cz, d, t, w, color);
+  box(x, cy, cz-w/2+t/2, d, h-2*t, t, color);
+  box(x, cy, cz+w/2-t/2, d, h-2*t, t, color);
+}
+
+
+// ===== RETAIL HALL SHELL (normal-based surfaces, opening-masked) =====
+// Front facade openings: gallery window, keyboard window, entrance, cafe corner cut
+const frontOpen = [
+  {u:-2.50, v:-1.035, w:4.80, h:4.05},   // instrument gallery (center X=-3.75, world v 2.70)
+  {u:2.45, v:-1.035, w:3.80, h:4.05},    // keyboard/lesson window (center X=1.20)
+  {u:5.625, v:-1.635, w:1.70, h:3.75},   // entrance (center X=4.375, world v 2.10)
+  {u:-5.00, v:-0.485, w:5.10, h:CBH},    // cafe corner cut (world v 3.25)
+];
+// Front: navy (38%) base + oak (28%) center band + charcoal (18%) edges
+buildSurface([RX, RH/2+0.11, ZF], [0,0,1], [1,0,0], [0,1,0], RW, RH, 0.5, NAVY, frontOpen, {depth:0.15, toneVar:true});
+// Oak band: central field around gallery/keyboard (local u -5.2..4.4, v 0..5.4)
+const oakOpen = [
+  {u:-2.10, v:-0.11, w:4.80, h:4.05},  // gallery
+  {u:2.85, v:-0.11, w:3.80, h:4.05},   // keyboard
+  {u:-4.60, v:0.44, w:5.10, h:CBH},    // cafe cut
+];
+buildSurface([RX-0.4, 2.7+0.11, ZF+0.05], [0,0,1], [1,0,0], [0,1,0], 9.6, 5.4, 0.5, OAK, oakOpen, {depth:0.12, toneVar:true});
+// Charcoal edges: far-right strip + base course
+buildSurface([RX+RW/2-0.75, RH/2+0.11, ZF+0.05], [0,0,1], [1,0,0], [0,1,0], 1.5, RH, 0.5, CHAR, frontOpen, {depth:0.12, toneVar:true});
+buildSurface([RX, 0.45+0.11, ZF+0.05], [0,0,1], [1,0,0], [0,1,0], RW, 0.9, 0.5, CHAR, frontOpen, {depth:0.12, toneVar:true});
+
+// Rear facade: Z0=-5.50 (charcoal with navy upper)
+buildSurface([RX, RH/2+0.11, RZ-RD/2], [0,0,-1], [-1,0,0], [0,1,0], RW, RH, 0.5, CHAR, [
+  {u:6.85, v:-2.06, w:1.50, h:3.35},   // rear service door (local v)
+], {depth:0.15, toneVar:true});
+buildSurface([RX, RH-1.0+0.11, RZ-RD/2-0.05], [0,0,-1], [-1,0,0], [0,1,0], RW, 2.0, 0.5, NAVY, null, {depth:0.12, toneVar:true});
+
+// Left facade: X0=-9.00 (charcoal masonry, cafe cut on upper front portion)
+buildSurface([RX-RW/2, RH/2+0.11, RZ], [-1,0,0], [0,0,1], [0,1,0], RD, RH, 0.5, CHAR, [
+  {u:3.35, v:-0.485, w:4.30, h:CBH},   // cafe cut (world v 3.25 → local -0.485)
+], {depth:0.15, toneVar:true});
+
+// Retail interior floor/ceiling/back (no full-volume core)
+brick(RX, 0.11, RZ, RW-0.3, RD-0.3, 0.22, 0x3a2c1c);            // floor
+brick(RX, RH-0.11, RZ, RW-0.3, RD-0.3, 0.22, 0x14100c);         // ceiling (dark)
+brick(RX, 0.30, RZ-RD/2+0.35, RW-0.3, 0.6, RH-0.75, 0x4a3526); // back wall partial (below roof)
+
+// ===== LESSON/REPAIR TOWER =====
+// Front: Z0=+4.25 — navy with oak lesson window
+buildSurface([TX, TH/2+0.11, TZ+TD/2], [0,0,1], [1,0,0], [0,1,0], TW, TH, 0.5, NAVY, [
+  {u:-0.50, v:-3.56, w:1.65, h:3.60},   // lessons door (center X=4.75, world v 1.80)
+  {u:0.90, v:1.04, w:2.60, h:2.40},     // upper lesson-room window (world v 6.40)
+], {depth:0.15, toneVar:true});
+// Tower right facade: X0=+8.25 — charcoal with repair window
+buildSurface([TX+TW/2, TH/2+0.11, TZ], [1,0,0], [0,0,-1], [0,1,0], TD, TH, 0.5, CHAR, [
+  {u:0.25, v:-2.36, w:3.80, h:3.20},   // repair window (world v 3.00 → local -2.36)
+], {depth:0.15, toneVar:true});
+// Tower rear: Z0=-5.75
+buildSurface([TX, TH/2+0.11, TZ-TD/2], [0,0,-1], [-1,0,0], [0,1,0], TW, TH, 0.5, CHAR, null, {depth:0.15, toneVar:true});
+// Tower interior floor/ceiling
+brick(TX, 0.11, TZ, TW-0.3, TD-0.3, 0.22, 0x3a2c1c);
+brick(TX, TH-0.11, TZ, TW-0.3, TD-0.3, 0.22, 0x241a10);
+
+// ===== CAFE/PERFORMANCE BAY (glazed corner, navy frame grid) =====
+// Front leg glass wall: X -8.90..-4.10 at Z=4.20, H 6.5
+// Left leg glass wall: Z 5.65..1.65 at X=-4.80, H 6.5
+// Glazing with navy mullion grid
+{
+  // Front leg: glass panes
+  box(-6.50, CBH/2+0.11, 4.20, 4.70, CBH-0.3, 0.08, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.16, roughness:0.08, metalness:0.05}});
+  // Left leg: glass panes
+  box(-4.80, CBH/2+0.11, 3.65, 0.08, CBH-0.3, 3.90, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.16, roughness:0.08, metalness:0.05}});
+  // Warm interior glow behind glass
+  box(-6.50, CBH/2+0.11, 4.10, 4.50, CBH-0.5, 0.05, WARMG, {shadow:false, mat:{emissive:WARMG, emissiveIntensity:0.5, transparent:true, opacity:0.14}});
+  box(-4.90, CBH/2+0.11, 3.65, 0.05, CBH-0.5, 3.70, WARMG, {shadow:false, mat:{emissive:WARMG, emissiveIntensity:0.5, transparent:true, opacity:0.14}});
+  // Navy mullions — front leg (verticals + horizontals)
+  for(let i=0;i<=4;i++) box(-8.85+i*1.175, CBH/2+0.11, 4.28, 0.14, CBH-0.2, 0.14, NAVY);
+  for(let j=0;j<=3;j++) box(-6.50, 0.35+j*2.05, 4.28, 4.80, 0.14, 0.14, NAVY);
+  // Navy mullions — left leg
+  for(let i=0;i<=3;i++) box(-4.88, CBH/2+0.11, 1.70+i*1.325, 0.14, CBH-0.2, 0.14, NAVY);
+  for(let j=0;j<=3;j++) box(-4.88, 0.35+j*2.05, 3.65, 0.14, 0.14, 4.00, NAVY);
+  // Corner post
+  box(-4.80, CBH/2+0.11, 4.20, 0.22, CBH, 0.22, NAVY);
+  // Bay roof cap (navy, with brass edge)
+  brick(-6.85, CBH+0.11, 3.70, 4.90, 2.60, 0.30, NAVY);
+  box(-6.85, CBH+0.26+0.11, 4.98, 4.90, 0.12, 0.18, BRASS, {shadow:false});
+  box(-4.62, CBH+0.26+0.11, 3.70, 0.18, 0.12, 2.60, BRASS, {shadow:false});
+  // Cafe interior floor
+  brick(-6.50, 0.11, 3.65, 4.40, 3.90, 0.22, 0x4a3423);
+}
+// Cafe interior — Layer B: two cafe tables (Z=4.70 → local Z 4.70)
+box(-7.60, 0.85, 3.30, 1.0, 0.08, 1.0, 0xe9e2d5); box(-7.60, 0.45, 3.30, 0.14, 0.8, 0.14, 0x3a3a3a);
+box(-5.60, 0.85, 3.15, 1.0, 0.08, 1.0, 0xe9e2d5); box(-5.60, 0.45, 3.15, 0.14, 0.8, 0.14, 0x3a3a3a);
+// Layer C: low stage 3.20 W x 1.80 D x 0.35 H at (-6.60, 2.30), mic + stool
+box(-6.60, 0.28, 2.30, 3.20, 0.35, 1.80, OAKD);
+box(-6.60, 0.46, 2.30, 3.20, 0.06, 1.80, OAK);
+box(-6.90, 1.30, 2.45, 0.06, 1.7, 0.06, 0x2a2a2a);          // mic stand
+box(-6.90, 2.18, 2.45, 0.16, 0.16, 0.16, 0x1a1a1a);          // mic
+box(-5.90, 0.75, 2.50, 0.55, 0.12, 0.55, 0x6a4a2a);          // stool seat
+box(-5.90, 0.40, 2.50, 0.10, 0.7, 0.10, 0x3a3a3a);           // stool leg
+// Layer D: compact beverage counter (no menu text)
+box(-7.90, 1.10, 1.85, 1.60, 0.55, 0.70, OAK);
+box(-7.90, 1.45, 1.85, 1.60, 0.08, 0.70, 0xD9C9A8);
+box(-7.55, 1.62, 1.85, 0.35, 0.28, 0.30, 0xC0C4C8);          // espresso machine hint
+// Layer E: warm wood rear wall + three stage bulbs
+box(-6.60, 2.80, 1.45, 4.30, 5.30, 0.15, 0xA87848);
+box(-7.50, 4.60, 1.60, 0.22, 0.30, 0.22, STAGE, {shadow:false, mat:{emissive:STAGE, emissiveIntensity:1.4}});
+box(-6.60, 4.60, 1.60, 0.22, 0.30, 0.22, STAGE, {shadow:false, mat:{emissive:STAGE, emissiveIntensity:1.4}});
+box(-5.70, 4.60, 1.60, 0.22, 0.30, 0.22, STAGE, {shadow:false, mat:{emissive:STAGE, emissiveIntensity:1.4}});
+
+// ===== CLERESTORY/STAFF VOLUME (five 0.25-u steps, like a musical phrase) =====
+{
+  const stepW=CLW/5;
+  for(let i=0;i<5;i++){
+    const h=1.20+i*0.25;  // 1.20,1.45,1.70,1.95,2.20
+    const sx=CLX-CLW/2+stepW/2+i*stepW;
+    brick(sx, RH+0.11, 0, stepW*0.98, CLD, h, i%2?NAVY:NAVYD);
+    // brass cap edge on each step
+    box(sx, RH+0.11+h+0.03, CLD/2-0.05, stepW*0.98, 0.06, 0.10, BRASS, {shadow:false});
+  }
+  // Clerestory glazing slits on front face
+  for(let i=0;i<5;i++){
+    const h=1.20+i*0.25, sx=CLX-CLW/2+stepW/2+i*stepW;
+    box(sx, RH+0.11+h*0.55, CLD/2+0.04, stepW*0.7, h*0.45, 0.06, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.4, roughness:0.12, emissive:0xFFC889, emissiveIntensity:0.25}});
+  }
+}
+
+// ===== ROOF DETAILS =====
+// Retail roof Y=7.25: deck + parapet + cap
+brick(RX, RH+0.11, RZ, RW, RD, 0.18, 0x8a8a86);
+brick(RX, RH+0.11, RZ, RW+0.4, RD+0.4, 0.45, CHARD);
+box(RX, RH+0.36+0.075, RZ, RW+0.4, 0.15, RD+0.4, 0x4a4640);
+// Tower roof Y=10.50: deck + parapet + cap
+brick(TX, TH+0.11, TZ, TW, TD, 0.18, 0x8a8a86);
+brick(TX, TH+0.11, TZ, TW+0.3, TD+0.3, 0.25, CHARD);
+box(TX, TH+0.36+0.075, TZ, TW+0.3, 0.15, TD+0.3, 0x4a4640);
+// Acoustic skylight strip: center (-1.50,-1.20), 5.50 x 1.00
+box(-1.50, RH+0.36+0.10, -1.20, 5.50, 0.20, 1.00, 0x9fc8e0, {shadow:false, mat:{transparent:true, opacity:0.55, roughness:0.15, emissive:0xFFC889, emissiveIntensity:0.15}});
+box(-1.50, RH+0.36+0.21, -1.20, 5.60, 0.06, 1.10, CHAR);
+// Repair exhaust at (5.80,-3.70)
+brick(5.80, TH+0.11, -3.70, 0.90, 0.90, 1.60, CHAR);
+box(5.80, TH+1.71+0.10, -3.70, 1.20, 0.20, 1.20, 0x5a5a5a);
+// Two screened HVAC units behind parapet
+box(-4.20, RH+0.36+0.40, -3.60, 1.60, 0.80, 1.20, 0x9aa0a6);
+box(0.90, RH+0.36+0.40, -3.80, 1.40, 0.80, 1.10, 0x9aa0a6);
+box(-4.20, RH+0.36+0.40, -3.60, 1.80, 1.00, 1.40, CHAR, {shadow:false, mat:{transparent:true, opacity:0.35}});
+box(0.90, RH+0.36+0.40, -3.80, 1.60, 1.00, 1.30, CHAR, {shadow:false, mat:{transparent:true, opacity:0.35}});
+
+// ===== SIGN SYSTEM: music-staff fascia =====
+// Fascia panel: center (-1.75,8.35,6.10), 10.80 W x 2.20 H x 0.35 D — navy
+box(-1.75, 8.35, 6.10, 10.80, 2.20, 0.35, NAVY);
+box(-1.75, 8.35, 6.08, 10.44, 1.96, 0.37, NAVYD, {shadow:false});
+// Five subtle brass staff lines across the fascia
+for(let i=0;i<5;i++) box(-1.75, 7.60+i*0.36, 6.30, 10.30, 0.045, 0.05, BRASS, {shadow:false});
+// MUSIC CENTER: center (-2.25,8.62,6.65), cap 0.82 → scale 0.117, cream
+drawName("MUSIC CENTER", 8.21, 6.65, 0.117, CREAM, 0.25);
+// NORTH: center (-2.25,7.72,6.65), cap 0.52 → scale 0.074, blue
+drawName("NORTH", 7.46, 6.65, 0.074, BLUE, 0.22);
+// Dimensional note at (3.60,8.40,6.72), bounding 1.15 W x 1.55 H, brass
+const NOTE=[
+ ".##..",
+ ".###.",
+ ".##..",
+ ".##..",
+ ".##..",
+ ".##..",
+ ".##..",
+"###..",
+"####.",
+".##.."];
+paintGlyph(NOTE, 3.60, 8.40, 6.72, 0.155, {'#':BRASS}, 'front');
+
+// ===== SLIM WOOD/BRASS CANOPY (NO striped awning) =====
+// center (-1.80,5.85,6.20), 9.00 W, projects to Z=7.45
+{
+  const cw=9.00, cx=-1.80;
+  // Wood slats (oak) — slim horizontal canopy
+  const n=18;
+  for(let i=0;i<n;i++){
+    box(cx-cw/2+(i+0.5)*(cw/n), 5.72, 6.82, cw/n*0.82, 0.10, 1.25, i%2?OAK:OAKD);
+  }
+  // Brass front edge
+  box(cx, 5.70, 7.45, cw, 0.12, 0.10, BRASS, {shadow:false});
+  // Brass support rods
+  box(cx-cw/2+0.4, 5.45, 6.85, 0.08, 0.55, 0.08, BRASS);
+  box(cx+cw/2-0.4, 5.45, 6.85, 0.08, 0.55, 0.08, BRASS);
+  box(cx, 5.45, 6.85, 0.08, 0.55, 0.08, BRASS);
+}
+
+// ===== STOREFRONT: 5-layer interior depth =====
+// --- Instrument gallery: center X=-3.75, Y=2.70, opening 4.80 W x 4.05 H ---
+// Glass + warm glow
+box(-3.75, 2.70, 5.55, 4.80, 4.05, 0.08, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.18, roughness:0.08, metalness:0.05}});
+box(-3.75, 2.70, 5.50, 4.60, 3.85, 0.05, WARMG, {shadow:false, mat:{emissive:WARMG, emissiveIntensity:0.35, transparent:true, opacity:0.08}});
+// Frame: outer face Z=6.20 (navy) — border strips, not a slab
+frameFront(-3.75, 2.70, 6.20, 5.00, 4.25, 0.22, 0.14, NAVY);
+box(-3.75, 2.70, 6.16, 0.10, 4.05, 0.08, NAVY);  // center mullion
+// Layer B (Z=4.70): oak display rail + two instrument stands
+box(-3.75, 1.15, 4.70, 4.40, 0.18, 0.50, OAK);
+box(-4.80, 0.70, 4.70, 0.10, 0.9, 0.10, 0x3a3a3a);
+box(-2.70, 0.70, 4.70, 0.10, 0.9, 0.10, 0x3a3a3a);
+// Layer C (Z=3.70): five guitars at X -5.30,-4.55,-3.80,-3.05,-2.30
+{
+  const gc=[0xD88848, 0xD84A30, 0x4a7ac2, 0xE8A858, 0xB06820];
+  for(let i=0;i<5;i++){
+    const gx=-5.30+i*0.75;
+    box(gx, 1.45, 4.10, 0.58, 0.85, 0.18, gc[i], {mat:{emissive:gc[i], emissiveIntensity:0.22, roughness:0.55}});  // body
+    box(gx, 1.42, 4.20, 0.20, 0.20, 0.05, 0x14100c, {shadow:false});     // sound hole
+    box(gx, 2.35, 4.10, 0.12, 1.00, 0.08, 0x4a3018);                     // neck
+    box(gx, 2.92, 4.10, 0.20, 0.22, 0.10, 0x2a1a10);                     // headstock
+    box(gx, 0.80, 4.10, 0.08, 0.50, 0.08, 0x3a3a3a);                     // stand
+  }
+}
+// Layer D (Z=2.45): amp stack + sheet-music shelf
+box(-4.60, 1.30, 2.45, 1.10, 1.00, 0.60, 0x1a1a1a);
+box(-4.60, 1.30, 2.78, 0.90, 0.80, 0.06, 0x3a3a3a, {shadow:false});
+box(-4.60, 2.15, 2.45, 1.00, 0.70, 0.55, 0x2a2a2a);
+box(-2.60, 1.60, 2.45, 1.60, 2.20, 0.30, OAKD);
+box(-2.60, 1.90, 2.62, 1.40, 0.08, 0.06, CREAM, {shadow:false});
+box(-2.60, 1.45, 2.62, 1.40, 0.08, 0.06, CREAM, {shadow:false});
+// Layer E (Z=1.15): slatted oak wall with warm grazing light
+{
+  for(let i=0;i<10;i++) box(-3.75-2.25+i*0.5, 2.70, 1.15, 0.38, 4.00, 0.12, i%2?0xA87a4a:0x8B643F);
+  box(-3.75, 4.55, 1.40, 4.60, 0.16, 0.16, WARMG, {shadow:false, mat:{emissive:WARMG, emissiveIntensity:1.6}});
+  // Display strip lighting above guitars (emissive)
+  box(-3.75, 3.30, 4.35, 4.50, 0.10, 0.10, 0xFFE0B0, {shadow:false, mat:{emissive:0xFFD9A0, emissiveIntensity:1.8}});
+}
+
+// --- Keyboard/lesson window: center X=1.20, Y=2.70, opening 3.80 W x 4.05 H ---
+box(1.20, 2.70, 5.55, 3.80, 4.05, 0.08, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.18, roughness:0.08, metalness:0.05}});
+box(1.20, 2.70, 5.50, 3.60, 3.85, 0.05, WARMG, {shadow:false, mat:{emissive:WARMG, emissiveIntensity:0.35, transparent:true, opacity:0.08}});
+frameFront(1.20, 2.70, 6.20, 4.00, 4.25, 0.22, 0.14, NAVY);
+// Layer B (Z=4.70): keyboard at (1.20,1.35), width 2.60, X-stand
+box(1.20, 1.35, 4.70, 2.60, 0.16, 0.60, 0xf5f0e4);
+for(let i=0;i<13;i++) box(1.20-1.20+i*0.20, 1.45, 4.62, 0.11, 0.06, 0.24, 0x0a0a0a, {shadow:false});
+box(0.60, 0.75, 4.70, 0.08, 1.2, 0.08, 0x3a3a3a);
+box(1.80, 0.75, 4.70, 0.08, 1.2, 0.08, 0x3a3a3a);
+// Layer C (Z=3.70): teacher/student benches + music stands
+box(0.30, 0.55, 3.70, 0.90, 0.10, 0.35, OAKD);
+box(2.10, 0.55, 3.70, 0.90, 0.10, 0.35, OAKD);
+box(0.30, 1.60, 3.70, 0.06, 1.1, 0.06, 0x2a2a2a);
+box(0.30, 2.20, 3.70, 0.50, 0.35, 0.05, 0x2a2a2a);
+box(2.10, 1.60, 3.70, 0.06, 1.1, 0.06, 0x2a2a2a);
+box(2.10, 2.20, 3.70, 0.50, 0.35, 0.05, 0x2a2a2a);
+// Layer D (Z=2.45): acoustic lesson-room partition with inner glazed door
+box(1.20, 2.30, 2.45, 3.40, 3.40, 0.14, 0x5a6a7a);
+box(0.30, 1.80, 2.38, 0.90, 2.20, 0.08, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.4, roughness:0.12}});
+// Layer E (Z=1.15): blue-gray acoustic wall + ceiling pendant
+box(1.20, 2.70, 1.15, 3.70, 4.00, 0.15, 0x6a7c8e);
+box(1.20, 4.40, 2.80, 0.25, 0.35, 0.25, WARMG, {shadow:false, mat:{emissive:WARMG, emissiveIntensity:1.5}});
+box(1.20, 3.30, 4.90, 3.50, 0.10, 0.10, 0xFFE0B0, {shadow:false, mat:{emissive:0xFFD9A0, emissiveIntensity:1.6}});
+
+// --- Entrance: center X=4.375, Y=2.10, opening 1.70 W x 3.75 H; recessed door Z=5.35 ---
+box(4.375, 2.10, 5.35, 1.60, 3.60, 0.20, NAVYD);
+box(4.375, 2.70, 5.35, 1.00, 1.40, 0.08, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.34, roughness:0.12}});
+frameFront(4.375, 2.10, 6.20, 1.90, 3.95, 0.20, 0.16, NAVY);
+box(4.88, 1.90, 5.45, 0.10, 0.50, 0.08, BRASS, {shadow:false});
+brick(4.375, 0, 6.10, 2.0, 0.9, 0.18, 0x9aa0a6);
+
+// --- Tower lessons door: center X=4.75, Y=1.80, 1.65 W x 3.60 H at Z0=4.25 ---
+box(4.75, 1.80, 4.05, 1.55, 3.45, 0.20, OAKD);
+box(4.75, 2.40, 4.05, 0.95, 1.30, 0.08, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.34, roughness:0.12}});
+frameFront(4.75, 1.80, 4.70, 1.85, 3.80, 0.20, 0.16, NAVY);
+box(5.28, 1.65, 4.12, 0.10, 0.45, 0.08, BRASS, {shadow:false});
+// LESSONS label above tower door (side-relevant, cap 0.32)
+drawName("LESSONS", 4.05, 4.72, 0.045, CREAM, 0.12);
+
+// --- Tower upper lesson-room window: center X=6.15, Y=6.40, 2.60 W x 2.40 H ---
+box(6.15, 6.40, 4.05, 2.60, 2.40, 0.08, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.18, roughness:0.08, metalness:0.05}});
+box(6.15, 6.40, 4.00, 2.40, 2.20, 0.05, WARMG, {shadow:false, mat:{emissive:WARMG, emissiveIntensity:0.3, transparent:true, opacity:0.08}});
+frameFront(6.15, 6.40, 4.70, 2.80, 2.60, 0.20, 0.14, NAVY);
+// interior hint: piano silhouette + student
+box(6.15, 5.90, 3.30, 1.60, 0.55, 0.70, 0x1a1a1a);
+box(5.40, 5.60, 3.30, 0.45, 0.75, 0.30, 0x5a4a3a);
+
+// --- Tower side repair window: right facade X0=8.25, center local Z=-0.50, Y=3.00, 3.80 W x 3.20 H ---
+box(8.05, 3.00, -0.50, 0.08, 3.20, 3.80, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.18, roughness:0.08, metalness:0.05}});
+box(8.00, 3.00, -0.50, 0.05, 3.00, 3.60, 0xFFF0CE, {shadow:false, mat:{emissive:0xFFF0CE, emissiveIntensity:0.3, transparent:true, opacity:0.08}});
+frameSide(8.70, 3.00, -0.50, 4.00, 3.40, 0.22, 0.14, CHAR);
+// Layer B: repair bench + green mat
+box(7.45, 1.30, -0.50, 0.70, 0.18, 3.20, OAK);
+box(7.45, 0.70, -0.50, 0.60, 1.0, 3.00, 0x3a3a3a);
+box(7.42, 1.42, -0.50, 0.50, 0.04, 2.20, 0x2f6a3a, {shadow:false});
+// Layer C: disassembled brass instrument silhouettes + task lamp
+box(7.45, 1.65, -1.30, 0.35, 0.35, 0.20, BRASS, {shadow:false});
+box(7.45, 1.58, -0.55, 0.15, 0.15, 0.90, BRASS, {shadow:false});
+box(7.45, 1.70, 0.30, 0.28, 0.20, 0.45, BRASS, {shadow:false});
+box(7.45, 2.30, 0.90, 0.08, 1.0, 0.08, 0x2a2a2a);
+box(7.45, 2.85, 0.75, 0.30, 0.18, 0.30, 0xFFF0CE, {shadow:false, mat:{emissive:0xFFF0CE, emissiveIntensity:1.2}});
+// Layer D: tool board
+box(6.60, 2.60, -0.50, 0.14, 2.40, 3.40, 0x4a3a2a);
+for(let i=0;i<6;i++) box(6.52, 1.80+((i%3)*0.6), -1.60+Math.floor(i/3)*1.1, 0.08, 0.4, 0.15, 0x9aa0a6, {shadow:false});
+// Layer E: rental-case storage
+box(5.90, 1.80, -0.50, 0.50, 2.60, 3.20, 0x2a2a2a);
+for(let i=0;i<4;i++) box(5.88, 0.90+i*0.62, -0.50, 0.44, 0.50, 2.90, i%2?0x1a1a1a:0x3a3a3a, {shadow:false});
+// REPAIRS label on tower right facade (cap 0.32, side-view relevant)
+{
+  const s=0.045, word="REPAIRS";
+  const tw=glyphCols(word)*s; let cz=-0.50+tw/2;
+  for(const ch of word){
+    const g=F5[ch]; if(!g||!g[0]){cz-=2*s;continue;} const gw=g[0].length;
+    for(let r=0;r<g.length;r++) for(let c=0;c<gw;c++)
+      if(g[r][c]==='1') box(8.35, 5.10+(g.length-1-r)*s, cz-c*s, 0.12, s*0.85, s*0.85, CREAM, {shadow:false});
+    cz-=(gw+1.5)*s;
+  }
+}
+
+// ===== REAR: rental-case racks + service door + trolley =====
+// Rental-case racks across X=-3.5..3.5 at rear Z=-5.30
+for(let i=0;i<5;i++){
+  const cx2=-3.5+i*1.75;
+  box(cx2, 1.05, -5.65, 1.40, 1.90, 0.50, 0x2a2a2a);
+  box(cx2, 0.50, -5.65, 1.20, 0.60, 0.40, i%2?0x1a1a1a:0x4a3a2a, {shadow:false});
+  box(cx2, 1.15, -5.65, 1.20, 0.55, 0.40, i%2?0x4a3a2a:0x1a1a1a, {shadow:false});
+  box(cx2, 1.75, -5.65, 1.20, 0.50, 0.40, 0x1a1a1a, {shadow:false});
+}
+// Rear service door at (5.60,-5.75): 1.50 W x 3.35 H
+box(5.60, 1.675, -5.60, 1.50, 3.35, 0.18, 0x4a4a4a);
+box(5.60, 2.40, -5.60, 0.90, 1.00, 0.08, GLASSG, {shadow:false, mat:{transparent:true, opacity:0.3, roughness:0.12}});
+frameFront(5.60, 1.675, -5.85, 1.70, 3.55, 0.18, 0.12, CHAR);
+box(6.10, 1.55, -5.55, 0.10, 0.45, 0.08, BRASS, {shadow:false});
+// Case trolley at (5.60,-7.00)
+box(5.60, 0.55, -7.00, 1.10, 0.12, 0.70, 0x6a6a6a);
+box(5.60, 1.05, -7.00, 1.00, 0.85, 0.55, 0x1a1a1a);
+box(5.20, 0.15, -7.25, 0.18, 0.18, 0.18, 0x2a2a2a);
+box(6.00, 0.15, -7.25, 0.18, 0.18, 0.18, 0x2a2a2a);
+box(5.20, 0.15, -6.75, 0.18, 0.18, 0.18, 0x2a2a2a);
+box(6.00, 0.15, -6.75, 0.18, 0.18, 0.18, 0x2a2a2a);
+
+// ===== CONNECTED PROPS =====
+// Student with instrument case at (3.85,7.40), toward lesson entrance
+minifig(3.85, 7.40, 0x2a4a7a, 0x2a2a2a);
+box(4.25, 0.65, 7.40, 0.30, 1.10, 0.18, 0x1a1a1a);   // instrument case
+box(4.25, 1.22, 7.40, 0.34, 0.08, 0.22, BRASS, {shadow:false});
+// Parent at (2.80,7.85), facing student/entrance
+minifig(2.80, 7.85, 0x6a4a5a, 0x3a3a3a);
+// Customer browsing window at (-3.60,7.35)
+minifig(-3.60, 7.35, OAK, 0x2a3a5a);
+// Cafe guest table outside bay at (-8.75,5.60) with chairs at +/-0.75
+box(-8.75, 0.68, 5.60, 1.0, 0.09, 1.0, 0xe9e2d5);
+box(-8.75, 0.34, 5.60, 0.13, 0.68, 0.13, 0x3a3a3a);
+box(-9.50, 0.42, 5.60, 0.55, 0.08, 0.55, 0x6a4a2a);
+box(-8.00, 0.42, 5.60, 0.55, 0.08, 0.55, 0x6a4a2a);
+box(-9.50, 0.20, 5.60, 0.11, 0.42, 0.11, 0x3a3a3a);
+box(-8.00, 0.20, 5.60, 0.11, 0.42, 0.11, 0x3a3a3a);
+minifig(-9.50, 5.05, 0x4a6a8a, 0x2a2a2a);  // seated guest
+// Guitar-case display: two cases leaning at 12° at (-1.30,6.80) and (-0.60,6.95)
+{
+  const lean=0.21; // ~12 degrees
+  box(-1.30, 0.85, 6.80, 0.55, 1.60, 0.22, 0x2a1a10);
+  box(-1.30, 0.85, 6.80+lean*0.8, 0.45, 1.45, 0.10, 0x4a3a2a, {shadow:false});
+  box(-0.60, 0.80, 6.95, 0.50, 1.50, 0.20, 0x1a1a1a);
+  box(-0.60, 0.80, 6.95+lean*0.75, 0.40, 1.35, 0.09, 0x3a3a3a, {shadow:false});
+}
+// Planters at (-8.35,7.30) and (3.10,7.30)
+planter(-8.35, 7.30, NAVY, 0x2f7a3a);
+planter(3.10, 7.30, NAVY, 0x2f7a3a);
+// Rental/service van at (9.75,-6.80), parallel to Z at rear service lane
+{
+  const vx=9.75, vz=-6.80, s=0.95;
+  box(vx, 0.9*s, vz, 2.0*s, 1.2*s, 4.2*s, 0xf2ead8);
+  box(vx, 1.9*s, vz+0.5*s, 2.0*s, 0.8*s, 3.0*s, 0xf2ead8);
+  box(vx, 1.7*s, vz-1.6*s, 1.8*s, 0.6*s, 1.0*s, 0xbfe3ff, {shadow:false});
+  [[-0.9,-1.3],[0.9,-1.3],[-0.9,1.3],[0.9,1.3]].forEach(p=>{
+    box(vx+p[0]*s, 0.35*s, vz+p[1]*s, 0.25*s, 0.7*s, 0.7*s, 0x1a1a1a);
+  });
+  // MCN wordmark on van side
+  const s2=0.13*s, wm="MCN";
+  const tw=glyphCols(wm)*s2; let cz2=vz-tw/2;
+  for(const ch of wm){
+    const g=F5[ch]; if(!g||!g[0]){cz2+=2*s2;continue;} const gw=g[0].length;
+    for(let r=0;r<g.length;r++) for(let c=0;c<gw;c++)
+      if(g[r][c]==='1') box(vx-1.05*s, 1.0*s+(g.length-1-r)*s2, cz2+c*s2, 0.05, s2*0.85, s2*0.85, NAVY, {shadow:false});
+    cz2+=(gw+1.5)*s2;
+  }
+}
+
+// ===== LIGHTING OVERRIDE (spec §5) =====
+cfg.rimColor = 0x4E7FC8;
+cfg.rimIntensity = 0.88;
+cfg.exposure = 1.08;
+cfg.bounceIntensity = 1.45;   // warm wood bounce
+cfg.keyColor = 0xE8F1FF;
+cfg.keyIntensity = 2.20;
 
      };
      buildVoxelScene(mount, CFG);
